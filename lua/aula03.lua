@@ -1,0 +1,10 @@
+print("Digite seu nome: ")
+nome=io.read()
+print("Digite um valor: ")
+var1=io.read("*number")
+print("Digite outro valor: ")
+var2=io.read("*number")
+soma=var1+var2
+print(nome)
+print (type(nome))
+print ("Soma de",var1,"com",var2,"=",soma)
