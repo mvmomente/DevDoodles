@@ -1,6 +1,7 @@
 # DevDoodles
 
-[![Linguagens](https://img.shields.io/github/languages/count/mvmomente/DevDoodles)]
+![Número de Linguagens](https://img.shields.io/github/languages/count/mvmomente/DevDoodles)
+![Linguagem Principal](https://img.shields.io/github/languages/top/mvmomente/DevDoodles)
 [![Tamanho do Repositório](https://img.shields.io/github/repo-size/mvmomente/DevDoodles)]
 [![Último Commit](https://img.shields.io/github/last-commit/mvmomente/DevDoodles)]
 
