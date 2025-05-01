@@ -5,19 +5,22 @@ public class GerenciadorDeArtistas {
     private ArrayList<Artista> artistas;
     private Scanner ler;
 
+    //CONSTRUTOR DE GERENCIADORDEARTISTAS
     public GerenciadorDeArtistas(Scanner ler) {
         this.artistas = new ArrayList<>();
         this.ler = ler;
     }
 
+    //METODO PARA CRIAR ARTISTA
     public void criarArtista() {
         System.out.println("Digite o Nome do Artista: ");
         String nomeArtista = ler.nextLine();
         Artista novoArtista = new Artista(nomeArtista, 0);
         artistas.add(novoArtista);
-        System.out.println("Artista: " + nomeArtista + "criado com sucesso!");
+        System.out.println("Artista: " + nomeArtista + " criado com sucesso!");
     }
 
+    //METODO PARA SELECIONAR ARTISTA, QUE RETORNA OBJETO DE ARTISTA
     public Artista selecionarArtista() {
         if (artistas.isEmpty()) {
             System.out.println("Nenhum artista cadastrado.");
@@ -50,6 +53,7 @@ public class GerenciadorDeArtistas {
         } while (true);
     }
 
+    //METODO PARA EXIBIR ARTISTAS
     public void exibirArtistas() {
         if (artistas.isEmpty()) {
             System.out.println("Nenhum artista encontrado.");

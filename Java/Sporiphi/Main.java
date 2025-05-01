@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class Main{
     public static void main(String[]args) {
         
+        //INICIALIZAÇÃO E INSTANCIAMENTO DE Scanner e GerenciadorDeArtistas
         Scanner ler = new Scanner(System.in);
         GerenciadorDeArtistas gerenciador = new GerenciadorDeArtistas(ler);
 
@@ -17,6 +18,7 @@ public class Main{
             System.out.println("0 - Sair");
             System.out.println("Escolha uma opção: ");
 
+            //VERIFICA SE O VALOR É INTEIRO
             if (ler.hasNextInt()) {
                 opcao = ler.nextInt();
                 ler.nextLine();
@@ -27,6 +29,8 @@ public class Main{
                         break;
                     case 2:
                         Artista artistaSelecionado = gerenciador.selecionarArtista();
+
+                        //VERIFICA SE artistaSELECIONADO NÃO É IGUAL NULO
                         if (artistaSelecionado != null) {
                             int continuarUpload = 1;
                             while (continuarUpload == 1) {
@@ -34,6 +38,8 @@ public class Main{
                                 String nomeMusica = ler.nextLine();
                                 artistaSelecionado.upload(nomeMusica);
                                 System.out.println("Deseja fazer mais um upload para " + artistaSelecionado.getNome() + "? (1 para sim / 0 para não): ");
+
+                                //VERIFICA SE O VALOR É INTEIRO
                                 if (ler.hasNextInt()) {
                                     continuarUpload = ler.nextInt();
                                     ler.nextLine();
